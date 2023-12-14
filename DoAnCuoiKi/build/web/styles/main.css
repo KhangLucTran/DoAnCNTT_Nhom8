@@ -1,0 +1,148 @@
+*{
+    padding:0;
+    font-family: "Merriweather", "sans-serif";
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    background-image: url("https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: auto;
+    z-index: 1;
+}
+.navbar{
+    width:100%;
+    height: 150px;
+    background-color: #FFFFFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo i{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.navbar-links li{
+    list-style: none;
+    font-size: 1.25rem;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+    border:none;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: border-raidus 0.3s;
+}
+.navbar-links{
+    display:flex;
+    gap: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.navbar-links a:hover{
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.1);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+button{
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px 20px;
+    transition: transform 0.3s ease;
+}
+#Login{
+    background-color: transparent;
+    color:white;
+}
+#Login:hover{
+    transform:scale(1.25);
+}
+#Signup{
+    background-color:#26c7fd;
+    color:#FFFFFF;
+    border-color: #26c7fd;
+}
+#Signup:hover{
+    transform:scale(1.25);
+}
+
+section{
+    width: 100%;
+    height: calc(100vh - 200px);
+    margin-top: 400px;
+    border: 10px solid #FFFFFF;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-left: 20px;
+    background-color: #FFFFFF;
+}
+.tours{
+    display:flex;
+    margin-left: -30px;
+}
+.tour{
+    border-radius: 20px;
+    overflow:hidden;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    width:calc(25%-30px);
+    margin-left:30px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+.tour a{
+    text-decoration: none;
+    color: black;
+}
+.tour:hover{
+    transform:scale(1.05);
+}
+.tour .tour-image{
+    height:200px;
+    width:100%;
+    object-fit: cover;
+}
+.content{
+    padding: 25px;
+}
+.tour-title{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.tour-info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tour-icon{
+    width: 40px;
+    height:40px;
+    flex-shrink: 0;
+}
+.tour-name{
+    padding-right: 20px;
+    flex:1;
+}
+.text{
+    margin: 25px;
+}
+.btn{
+    width:100%;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: transfrom 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
